@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Login section</title>
-    
-      <style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  
+  <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f2f5;
@@ -22,7 +24,7 @@
       width: 320px;
     }
 
-    h1 {
+    h2 {
       color: #1877f2;
       text-align: center;
       margin-bottom: 20px;
@@ -54,7 +56,7 @@
       outline: none;
     }
 
-    .login {
+    .login-btn {
       width: 100%;
       background-color: #1877f2;
       color: white;
@@ -67,7 +69,7 @@
       margin-top: 10px;
     }
 
-    .login {
+    .login-btn:hover {
       background-color: #166fe5;
     }
 
@@ -84,36 +86,25 @@
       text-decoration: underline;
     }
   </style>
-    </head>
+</head>
+<body>
+
+  <form>
+    <h2>Login to Facebook</h2>
     
-    <body>
-      
-      <form>
-        <fieldset>
-          <legend><h1>Login to Facebook</h1></legend>
-          
-          <div class="input group">
-        <label for="email">Email or phone number</label>
-        <input type="email" id="email" placeholder="Enter email" required>
-        </div>
-        
-        <div class="input group">
-          <laber for="password">Password</laber><br>
-          <input type="password" id="password" placeholder="Enter password" required>
-        </div>
-        
-        <div class="input group">
-          <laber for="date">Date of birth</laber>
-          <input type="date" id="date" placeholder="dob" required>
-        </div>
-        
-        <button>Login</button><br>
-        
-        <a href="https://www.google.com">Forget password</a>
-        
-        
-        
-      </form>
-      
-    </body>
+    <div class="input-group">
+      <label for="email">Email or Phone</label>
+      <input type="text" id="email" placeholder="Enter email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+    </div>
+
+    <button type="submit" class="login-btn">Log In</button>
+    <a href="#" class="forgot-link">Forgot password?</a>
+  </form>
+
+</body>
 </html>
